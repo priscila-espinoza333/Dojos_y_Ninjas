@@ -16,9 +16,9 @@ class Dojo:
     #aqui estoy haciendo la funcionalidad para guardar todos los dojos
     @classmethod
     def save(cls, formulario):
-        #formulario voy a recibir un diccionario (name: chile)
+        #formulario = {name: Chile}
         query = "INSERT INTO dojos (name) VALUES (%(name)s)"
-        result = connectToMySQL('dojos_ninjas').query_db(query, formulario) # aqui debe ir el mismo nombre que le puse al esquema en mysql
+        result = connectToMySQL('dojos_ninjas').query_db(query, formulario)
         return result
 
     @classmethod
