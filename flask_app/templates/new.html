@@ -15,7 +15,7 @@
                 <label for="dojo">Dojo</label>
                 <select id="dojo" name="dojo_id" class="form-control">
                     {% for dojo in dojos %}
-                    <option value="{{dojo.id}}"> {{dojo.name}} </option>
+                    <option value="{{id}}"> {{dojo.name}} </option>
                     {% endfor %}
                 </select>
             </div>
@@ -34,6 +34,5 @@
             <input type="submit" value="Guardar Ninja" class="btn btn-success">
         </form>
     </div>
-    
 </body>
 </html>

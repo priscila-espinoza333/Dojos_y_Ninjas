@@ -51,7 +51,7 @@ class Dojo:
                 'age': row['age'],
                 'created_at': row['created_at'],
                 'update_at': row['update_at'],
-                'dojo_id': row['dojo_id']
+                'id': row['id']
             }
 
             instancia_ninja = Ninja(ninja)
